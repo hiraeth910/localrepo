@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>incrimentor</title>
+        <style>
+            body{
+                display:flex;
+                flex-direction: column;
+                align-items: center;
+                background-image: url(images/asteroid.webp);
+                background-size:cover;
+                color: #d5deeb;
+            }
+            .a{ 
+                border: none;
+                border-radius: 15px;
+                padding: 15px 0;
+                margin: 20px 0;
+                width: 200px;
+            }
+            #b{
+                background-color: deeppink;
+            }
+            #c{
+                background-color: fuchsia;
+            }
+            #d{
+                font-size: 80px;
+                margin-right: 20px;
+            }
+            #t{
+                display: flex;
+                justify-content:space-around;
+            }
+            #x{
+                height: 45px;
+                width: 45px;
+                margin-top: 110px;
+                border: none;
+                border-radius: 100px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1><font face="bold">The  asteroid count is</font></h1>
+        <div id="t">
+            <p id="d">0</p>
+            <button id="x" onclick="reset()">c</button>
+        </div>
+        <button class="a" id="b" onclick="incriment()">Incriment</button>
+        <button class="a" id="c" onclick="save()">Save</button>
+        <p1 id="g">Previous entries:</p1>
+        <script>
+           let d=document.getElementById("d")
+           let g=document.getElementById("g")
+           let count = 0
+           function incriment(){
+               count = count+1
+               d.innerText = count
+           }
+           function save(){
+               let q= count+" - "
+               g.textContent +=q
+             d.innerText = 0
+               count= 0
+            }
+           function reset(){
+               d.innerText = 0
+               count= 0
+           }
+        </script>
+    </body>
+</html>
