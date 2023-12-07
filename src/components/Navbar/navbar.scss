@@ -1,0 +1,71 @@
+.navbar{
+    margin-top: 0px;
+    color:rgb(253, 253, 253);
+    font-size: 16.5px;
+   position: fixed;
+   top: 0;
+   width: 100%;
+   z-index: 999;
+   background: linear-gradient(to top,transparent 0% ,rgba(0, 0, 0, 0.327) 100%);
+   &.scrolled{
+     background-color: var(--main-color);
+   }
+}
+.container{
+    padding:0px 50px;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.left{
+    display: flex;
+    align-items: center;
+    .items{
+        margin-left: 23px;
+        cursor:pointer;
+    }
+}
+.right{
+    display: flex;
+    align-items: center;
+   
+    }
+    .items{
+        margin-left:5px;
+        margin-right:5px;
+        
+    }
+.sett {
+  position: relative; /* Make sure the .sett container is positioned relative */
+}
+
+.sett .options {
+  display: none;
+  position: absolute;
+  top: 100%; /* Position options below the trigger */
+  left: 0;
+  background-color: #090808; /* Add a background color for better visibility */
+   /* Add a border for a neat appearance */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a box shadow for a subtle lift */
+}
+
+.sett:hover .options {
+  display: flex;
+  flex-direction: column;
+}
+
+.sett .options span {
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+// .sett .options span:hover {
+//   background-color: #f0f0f0; /* Change background color on hover */
+// }
+
+.sett #dd {
+  margin-right: 5px; /* Adjust spacing between the icon and text */
+}

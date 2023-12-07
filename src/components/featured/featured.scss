@@ -1,0 +1,40 @@
+.featured{
+  height:90vh;
+  position: relative;
+  
+  img{
+    width: 400px;
+    margin-bottom: -50px;
+    
+    object-fit: cover;
+
+  }
+  .buttons{
+    button{
+        margin-right: 4px;
+        margin-top: 10px;
+        padding:10px 20px;
+        border:none;
+        background-color: rgba(244, 241, 241, 0.707);
+        color: black;
+        border-radius: 4px;
+        font-size: 17px;
+        font-weight: 500;
+        cursor: pointer;
+        span{
+            margin-left: 5px;
+            
+        }
+    }
+  }
+  .info{
+    width: 35%;
+    position: absolute;
+    left: 50px;
+    bottom: 100px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+
+  }
+}
