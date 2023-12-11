@@ -1,0 +1,58 @@
+.listitem{
+    width: 225px;
+    height: 120px;
+    background-color: var(--main-color);
+    margin-right: 5px;
+    overflow: hidden;
+    color: aliceblue;
+    img{
+    object-fit: cover;
+         width: 100%;
+          height: 100%}
+        video{
+            width: 100%;
+            height:135px;
+            object-fit: cover;
+            position:absolute;
+            top: 0;
+            left: 0;
+        }
+    .icons{
+        color: aliceblue;
+       
+    }
+    .it{
+        color:grety;
+        display: flex;
+        
+        margin:0 5px;
+        font-size: 10px;
+    }
+    
+    .icon{
+        border: 1.5px solid white;
+        border-radius: 50%;
+        margin-left: 2px;
+        margin-right: 6px;
+        font-size: 15px;
+        cursor: pointer;
+    }
+    .desc{
+        font-size: 13px;
+    }
+    &:hover{
+        display: block;
+        width: 325px;
+        height:224px;
+        z-index: 999;
+        position: absolute;
+        border-radius: 6px;
+        -webkit-box-shadow: 1px 1px 16px 1px rgba(252,252,252,1);
+-moz-box-shadow: 1px 1px 16px 1px rgba(252,252,252,1);
+box-shadow: 1px 1px 16px 1px rgba(252,252,252,1);
+        img{
+            height: 135px;
+        }
+    
+    }
+}

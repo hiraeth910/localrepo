@@ -1,6 +1,6 @@
 import { useState } from "react"
 import "./navbar.scss"
-import { SearchOutlined,BellFilled ,CaretDownOutlined ,LogoutOutlined ,SettingOutlined } from "@ant-design/icons"
+  import { SearchOutlined,BellFilled ,CaretDownOutlined ,LogoutOutlined ,SettingOutlined } from "@ant-design/icons"
 const Navbar = () => {
   const [issc,setissc] = useState(false)
   window.onscroll=()=>{

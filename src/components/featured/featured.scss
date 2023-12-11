@@ -1,7 +1,26 @@
 .featured{
   height:90vh;
   position: relative;
-  
+  .category{
+    position: absolute;
+    top:100px;
+    left:50px;
+    font-size: 30px;
+    font-weight: 500;
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    select{
+      cursor: pointer;
+      background-color: var(--main-color);
+      border: 0.2px solid white;
+      color: aliceblue;
+      margin-left: 20px;
+      padding:5px;
+      border-radius: 4px;
+    }
+
+  }
   img{
     width: 400px;
     margin-bottom: -50px;
@@ -15,10 +34,10 @@
         margin-top: 10px;
         padding:10px 20px;
         border:none;
-        background-color: rgba(244, 241, 241, 0.707);
+        background-color: rgba(254, 253, 253, 0.932);
         color: black;
         border-radius: 4px;
-        font-size: 17px;
+        font-size: 15.3px;
         font-weight: 500;
         cursor: pointer;
         span{
